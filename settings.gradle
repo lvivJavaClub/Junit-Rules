@@ -1,0 +1,4 @@
+rootProject.name = 'junit-rules-demo'
+
+include 'junit4'
+include 'junit5'

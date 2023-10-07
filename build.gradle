@@ -1,0 +1,10 @@
+plugins {
+	id 'java'
+}
+
+group = 'ua.lviv.javaclub'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}

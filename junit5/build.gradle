@@ -1,0 +1,29 @@
+plugins {
+  id 'application'
+}
+
+group = 'ua.lviv.javaclub'
+version = '0.0.1-SNAPSHOT'
+
+java {
+  sourceCompatibility = '17'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+  testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.10.0'
+
+  // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
+  testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.10.0'
+  
+  // https://mvnrepository.com/artifact/org.junit-pioneer/junit-pioneer
+  testImplementation group: 'org.junit-pioneer', name: 'junit-pioneer', version: '2.1.0'
+}
+
+tasks.named('test') {
+  useJUnitPlatform()
+}
